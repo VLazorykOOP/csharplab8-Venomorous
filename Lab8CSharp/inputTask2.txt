@@ -1,0 +1,3 @@
+2This is an example text file.
+It contains some numbers, such as 42, 15, and 99.
+The maximum number in this text is 99.

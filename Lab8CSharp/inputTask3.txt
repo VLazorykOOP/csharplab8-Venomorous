@@ -1,0 +1,4 @@
+Hello! This is an example text file.
+It contains various words and punctuation marks.
+The program will delete words that appear only once.
+This line here is to repeat words.

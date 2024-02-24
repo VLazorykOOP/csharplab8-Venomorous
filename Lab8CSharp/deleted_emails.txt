@@ -1,0 +1,4 @@
+contact@example.com
+info@company.com
+support@company.com
+john.doe@gmail.com
