@@ -132,10 +132,10 @@ class Program
 
     static void FolderManipulations()
     {
-        string studentName = "YourStudentName";
+        string studentName = "Hurkin";
 
-        string folder1Path = $"D:\\temp\\{studentName}1";
-        string folder2Path = $"D:\\temp\\{studentName}2";
+        string folder1Path = $"temp\\{studentName}1";
+        string folder2Path = $"temp\\{studentName}2";
 
         Directory.CreateDirectory(folder1Path);
         Directory.CreateDirectory(folder2Path);
@@ -145,11 +145,11 @@ class Program
 
         File.WriteAllText(
             t1FilePath,
-            "<Shevchenko Stepan Ivanovych, 2001> year of birth, place of residence <m. Sumy>."
+            "Шевченко Степан Іванович, 2001 року народження, місце проживання м. Суми"
         );
         File.WriteAllText(
             t2FilePath,
-            "<Komar Sergey Fedorovich, 2000> year of birth, place of residence <city. Kyiv>."
+            "Комар Сергій Федорович, 2000 року народження, місце проживання м. Київ"
         );
 
         string t3FilePath = Path.Combine(folder2Path, "t3.txt");
@@ -167,7 +167,7 @@ class Program
         string newT1FilePath = Path.Combine(folder2Path, "t1.txt");
         File.Copy(t1FilePath, newT1FilePath);
 
-        string allFolderPath = $"D:\\temp\\ALL";
+        string allFolderPath = $"temp\\ALL";
         Directory.Move(folder2Path, allFolderPath);
 
         Directory.Delete(folder1Path, true);
