@@ -16,7 +16,7 @@ class Program
             Console.WriteLine("2. Extract Max Integer");
             Console.WriteLine("3. Delete Unique Words");
             Console.WriteLine("4. WriteRealNumbersToFile");
-            Console.WriteLine("5. Task5");
+            Console.WriteLine("5. FolderManipulations");
             Console.WriteLine("6. Exit");
             Console.Write("Enter your choice: ");
             choice = int.Parse(Console.ReadLine());
@@ -35,7 +35,7 @@ class Program
                     WriteRealNumbersToFile();
                     break;
                 case 5:
-                    Task5();
+                    FolderManipulations();
                     break;
                 case 6:
                     return;
@@ -130,7 +130,7 @@ class Program
         }
     }
 
-    static void Task5()
+    static void FolderManipulations()
     {
         string studentName = "YourStudentName";
 
