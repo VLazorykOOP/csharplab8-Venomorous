@@ -168,7 +168,9 @@ class Program
         File.Copy(t1FilePath, newT1FilePath);
 
         string allFolderPath = $"D:\\temp\\ALL";
-        Directory.Move(folder1Path, allFolderPath);
+        Directory.Move(folder2Path, allFolderPath);
+
+        Directory.Delete(folder1Path, true);
 
         string[] allFiles = Directory.GetFiles(allFolderPath);
         Console.WriteLine("Files in the folder All:");
