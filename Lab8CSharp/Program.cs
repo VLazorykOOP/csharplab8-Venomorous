@@ -152,10 +152,18 @@ class Program
             "Комар Сергій Федорович, 2000 року народження, місце проживання м. Київ"
         );
 
+        Console.WriteLine("Text files with text were created!");
+        Console.WriteLine("Press any Key to continue...");
+        Console.ReadLine();
+
         string t3FilePath = Path.Combine(folder2Path, "t3.txt");
 
         File.AppendAllText(t3FilePath, File.ReadAllText(t1FilePath));
         File.AppendAllText(t3FilePath, File.ReadAllText(t2FilePath));
+
+        Console.WriteLine("Text file with text was created!");
+        Console.WriteLine("Press any Key to continue...");
+        Console.ReadLine();
 
         PrintFileDetails(t1FilePath);
         PrintFileDetails(t2FilePath);
